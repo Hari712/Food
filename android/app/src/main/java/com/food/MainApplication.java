@@ -19,7 +19,7 @@ public class MainApplication extends Application implements ReactApplication {
         public boolean getUseDeveloperSupport() {
           return BuildConfig.DEBUG;
         }
-
+        
         @Override
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
@@ -28,6 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
           // packages.add(new MyReactNativePackage());
           return packages;
         }
+      
 
         @Override
         protected String getJSMainModuleName() {

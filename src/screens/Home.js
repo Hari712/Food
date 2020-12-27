@@ -163,9 +163,7 @@ const Home = ({ navigation }) => {
 
         return (
             <View style={{ padding: SIZES.padding * 2 }}>
-                <Text style={{ ...FONTS.h1 }}>Main</Text>
-                <Text style={{ ...FONTS.h1 }}>Categories</Text>
-
+                <Text style={{ ...FONTS.h1 }}>Main Categories</Text>
                 <FlatList
                     data={categories}
                     horizontal
@@ -207,14 +205,13 @@ const Home = ({ navigation }) => {
                         style={{
                             position: 'absolute',
                             bottom: 0,
-                            height: 50,
-                            width: SIZES.width * 0.3,
+                            height: 40,
+                            width: SIZES.width * 0.4,
                             backgroundColor: COLORS.white,
                             borderTopRightRadius: SIZES.radius,
                             borderBottomLeftRadius: SIZES.radius,
                             alignItems: 'center',
-                            justifyContent: 'center',
-                            ...styles.shadow
+                            justifyContent: 'center'
                         }}
                     >
                         <Text style={{ ...FONTS.h4 }}>{item.duration}</Text>
